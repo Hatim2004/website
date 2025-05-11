@@ -12,7 +12,7 @@ body{
     color: white;
     position: fixed; 
     width: 100%;
-    height: 10rem;
+    height: 10.8rem;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
@@ -37,7 +37,15 @@ body{
   left: 30%;
   transform: translate(-50%, -50%);
 }
-
+ 
+button{
+  background-color:#1a81bc;
+  border: none;
+  font-family: 'Fira Code', monospace;
+  
+  padding: 0px 10px 0px 10px;
+ 
+}
 
 
 .name-link{
@@ -51,7 +59,10 @@ body{
     font-size: large;
 }
 
-
+.link:hover{
+    font-size: large;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 .switch {
     margin-top: 12px;
