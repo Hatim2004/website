@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitm website</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function dark_light(){
+            var checkbox1 = document.getElementById("dark-mode-btn")
+
+            var DarkLink = document.createElement('link');
+            DarkLink.rel = 'stylesheet';
+            DarkLink.type = 'text/css';
+            DarkLink.href = 'DarkStyle.css';
+
+            var Link = document.createElement('link');
+            Link.rel = 'stylesheet';
+            Link.type = 'text/css';
+            Link.href = 'style.css';
+            
+            
+            if(checkbox1.checked == true){
+                document.head.appendChild(Link);
+            }
+            else{
+                document.head.appendChild(DarkLink);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="head-con">
+        <label class="switch">
+            <input id="dark-mode-btn" onclick="dark_light()" type="checkbox" checked>
+            <span class="slider"></span>    
+        </label>
+        <h1><a class="name-link" href="">Hatim Saqer</a></h1>
+        <nav>
+            <ul><a class="link" href="index.html">Home</a></ul>
+            <ul><a class="link" href="#about">About</a></ul>
+            <ul><a class="link" href="#projects">Projects</a></ul>
+            <ul><a class="link" href="#skills">Skills</a></ul>
+            <ul><a class="link" href="#contact">Contact</a></ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="AB">
+            <h2>About me</h2>
+            <p class="AB-text">
+                I’m a passionate and detail-oriented Computer Science graduate with a Bachelor’s degree in north border university,<br>
+                where I cultivated a strong foundation in software development, 
+                When I’m not immersed in tech, you’ll find me reading a book.<br>
+                I’m excited to collaborate on innovative projects and leverage technology to make a meaningful impact.<br>
+                Let’s connect and create something amazing together!
+
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <div>
+            <h2 style="padding: 60px; padding-bottom: 10px;">Projects</h2>
+            <div style="padding: 60px; padding-top: 20px;">
+                <ul><img style="width: 13rem; height: 10rem;" src="images/CoolDesktopImage.avif" alt=""></ul>
+                <ul><img style="width: 13rem; height: 10rem;" src="images/Arch_First_Day.avif" alt=""></ul>
+                <ul><img style="width: 13rem; height: 10rem;" src="images/Arch_First_Day.avif" alt=""></ul>
+                <ul><img style="width: 13rem; height: 10rem;" src="images/Arch_First_Day.avif" alt=""></ul>
+            </div>
+            <br>
+       
+        </div>
+    </section>
+    
+
+    <section id="cert">
+        <h2 style="padding: 60px; padding-bottom: 0px;">Certificate</h2>
+        <div class="cert-continer">
+            <div class="container">
+                <abbr title="computer sicner"><img  src="images/certificate.png"></abbr>    
+                <abbr title="computer sicner"><img  src="images/certificate.png"></abbr>
+                <abbr title="computer sicner"><img  src="images/certificate.png"></abbr>
+                <abbr title="computer sicner"><img  src="images/certificate.png"></abbr>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div>
+            <h2 style="padding: 60px; padding-bottom: 2%; padding-top: 0px;"> Tech skills</h2>
+            <nav style="padding-left: 60px; padding-top: 0%;">
+                <P><b>Front-end development</b></p>
+                <li>HTML</li>
+                <li>bootstrap</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <p><b>back-end development</b></p>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+            </nav>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="media" >
+            <h1>Let's communicate</h1>
+            <a href="https://www.linkedin.com/in/hatim-saqer-128365251/ "><img src="images/linkedin-white.png" alt=""></a>
+            <a href="https://github.com/Hatim2004"><img src="images/github-white.png" alt=""></a>
+            <a href="mailto:sqrhatm064@gmail.com"><img src="images/mail-white.png" alt=""></a>
+        </div>
+       
+    </section>
+    
+</body>
+</html>
